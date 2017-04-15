@@ -1,0 +1,39 @@
+{
+  "name": "immutable-delete",
+  "version": "1.0.0",
+  "description": "Shallow copy an object, excluding one of its keys",
+  "author": "Jack Peterson <jack@tinybike.net>",
+  "license": "MIT",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./node_modules/tape/bin/tape ./test/*.js | ./node_modules/tap-spec/bin/cmd.js",
+    "lint": "eslint index.js && eslint gulpfile.js && eslint test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tinybike/immutable-delete.git"
+  },
+  "keywords": [
+    "immutable",
+    "delete",
+    "mutation"
+  ],
+  "bugs": {
+    "url": "https://github.com/tinybike/immutable-delete/issues"
+  },
+  "homepage": "https://github.com/tinybike/immutable-delete#readme",
+  "devDependencies": {
+    "async": "^1.5.2",
+    "browserify": "^13.1.1",
+    "coveralls": "^2.11.15",
+    "eslint": "^3.17.1",
+    "gulp": "^3.9.1",
+    "istanbul": "^0.4.5",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.3",
+    "uglify-js": "^2.7.4"
+  }
+}
