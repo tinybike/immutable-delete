@@ -12,10 +12,18 @@ npm install immutable-delete
 
 ```javascript
 var immutableDelete = require("immutable-delete");
+
+var originalObject = { key1: "value1", key2: "value2" };
+
+console.log(immutableDelete(originalObject, "key1"));
+// { key2: "value2" }
+
+console.log(originalObject);
+// { key1: "value1", key2: "value2" }
 ```
 
 ```html
-<script src="dist/immutable-delete.min.js" type="text/javascript"></script>
+<script src="dist/immutable-delete.min.js"></script>
 ```
 
 ## Tests

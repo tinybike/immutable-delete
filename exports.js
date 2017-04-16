@@ -1,2 +1,2 @@
-var immutableDelete = global.immutableDelete || require("./");
+var immutableDelete = global.immutableDelete || require("./src");
 global.immutableDelete = immutableDelete;

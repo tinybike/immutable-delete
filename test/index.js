@@ -2,7 +2,7 @@
 
 var test = require("tape");
 var async = require("async");
-var immutableDelete = require("../");
+var immutableDelete = require("../src");
 
 var noop = function () {};
 
