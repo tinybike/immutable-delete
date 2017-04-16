@@ -1,9 +1,9 @@
 {
   "name": "immutable-delete",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Shallow copy an object, excluding one of its keys",
   "author": "Jack Peterson <jack@tinybike.net>",
-  "license": "MIT",
+  "license": "CC0-1.0",
   "main": "index.js",
   "directories": {
     "test": "test"
