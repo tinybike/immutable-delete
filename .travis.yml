@@ -16,4 +16,4 @@ before_script:
 
 script:
   - npm run lint
-  - istanbul cover ./node_modules/tape/bin/tape --report lcovonly -- ./test/*.js && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+  - istanbul cover ./node_modules/tape/bin/tape --report lcovonly -- ./test/*.js && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage
