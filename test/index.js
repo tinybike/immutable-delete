@@ -57,6 +57,15 @@ test("One-level object", function (t) {
       t.deepEqual(originalObject, { key1: "value1", key2: noop }, "original object unchanged");
       t.deepEqual(objectWithoutExcludedKey, { key1: "value1" }, "remove key from object");
     }
+  }, {
+    params: {
+      originalObject: { key1: "value1", key2: "value2", key3: "value3", key4: "value4" },
+      excludeKey: ["key1", "key3"]
+    },
+    assertions: function (originalObject, objectWithoutExcludedKey) {
+      t.deepEqual(originalObject, { key1: "value1", key2: "value2", key3: "value3", key4: "value4" }, "original object unchanged");
+      t.deepEqual(objectWithoutExcludedKey, { key2: "value2", key4: "value4" }, "remove key from object");
+    }
   }];
   async.each(testCases, function (testCase, nextTestCase) {
     runtest(testCase);
